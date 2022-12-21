@@ -1,0 +1,7 @@
+P>Please Register to new account</P>
+    <form action="" method="post">
+     {% csrf_token %}
+     {{ form.as_p }}
+    <input type="submit" value="Submit">
+    <p>Already have an account ?<a href="{% url 'Login' %} "> Login </a></p>
+    </form>
